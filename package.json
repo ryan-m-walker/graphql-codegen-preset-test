@@ -1,0 +1,22 @@
+{
+  "name": "graphql-codegen-preset-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ryan Walker",
+  "license": "MIT",
+  "scripts": {
+    "codegen": "graphql-codegen --config codegen.yml"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.5.9",
+    "graphql": "^16.3.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "2.6.2",
+    "@graphql-codegen/near-operation-file-preset": "^2.2.6",
+    "@graphql-codegen/typescript": "2.4.5",
+    "@graphql-codegen/typescript-operations": "2.3.2",
+    "@graphql-codegen/typescript-react-apollo": "3.2.8",
+    "graphql-codegen-mock-results": "^1.0.8"
+  }
+}

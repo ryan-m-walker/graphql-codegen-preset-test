@@ -1,0 +1,15 @@
+overwrite: true
+schema: schema.graphql
+documents: "src/**/*.graphql"
+generates:
+  src/types.ts:
+    - typescript
+  src/:
+    preset: near-operation-file
+    presetConfig:
+      extension: .generated.tsx
+      baseTypesPath: types.ts
+    plugins:
+      - typescript-operations
+      - typescript-react-apollo
+      - mock-results
